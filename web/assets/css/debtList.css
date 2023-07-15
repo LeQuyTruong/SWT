@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+.table{
+    margin: 0 auto;
+}
+.btn-add-debt {
+    float: right;
+    margin-right: 8px;
+    background-color: #002752;
+
+}
+
+.btn-header {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+}
+
+.heading-input {
+    margin-bottom: 46px;
+}
+
+.btn-action {
+    width: 100%;
+}
+
+.role-debt {
+    width: 49%;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    color: #000;
+    background-color: #ccc;
+    font-size: 24px;
+}
+
+.active {
+    background-color: #6699FF;
+    color: #fff;
+
+}
+.block-btn-header button{
+    color: white;
+}
+.d-flex{
+    color: white;
+}
+.container{
+    position: absolute;
+    top: 10%;
+}
+.container .name-and-record{
+    position: absolute;
+    left: 15%;
+}
+.container1{
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 15%;
+    right: 15%;
+}
+
+.add-new-debtor{
+    background-color: #002752;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    z-index: -1;
+}
+.add-new-debtort:hover{
+    background-color: #ccc;
+}
+
+.header-form-debtlist{
+    background-color: #002752;
+}
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#size{
+    margin-top: 2px;
+    width: 30%;
+    height: 90%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.page-link{
+    width: 200px;
+    border-radius: 5px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    border: #e9ecef solid 1px;
+    margin: 0 2px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    width: 50%;
+    height: 10%;
+}
+.-pageInfor{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.-inputPage{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.-totalpage{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.dot{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.page-item #Previous {
+    border-radius: 10px;
+    padding: 5px 100px;
+    margin-left: 50px;
+}
+.page-item #Next {
+    border-radius: 10px;
+    padding: 5px 100px;
+    margin-right: 50px;
+}
+table td:nth-child(7) {
+    width: 200px;
+}
+table td:nth-child(2) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; 
+}
+.action-form{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,26 @@
+*{
+    text-align: center; 
+    text-decoration: none;
+}
+.box-from{
+    position: fixed;
+    top: 100px;
+    left: 500px;
+    border: black solid 1px;
+    width: 40%;
+    height: 470px;
+    border-radius: 20px;
+}
+.box-from h1{
+    margin: 20px;
+}
+.box-from input{
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 10px;
+}
+.update_button:hover{
+    background-color: #fbceb5;
+    font-size: 15px;
+}

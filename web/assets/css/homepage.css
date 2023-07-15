@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap');
+:root {
+    --main-color: black;
+    --sub-color: #fff;
+    --third-color: #edb350;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile-text, .logout-text, .noti-text, .debtor-text, .home-text{
+    top: 45px;
+    font-size: 32px;
+}
+.debtors-logo{
+    position: fixed;
+    margin-top: 18px;
+    font-size: 30px;
+    left: 200px;
+}
+.home-logo{
+    position: fixed;
+    margin-top: 18px;
+    font-size: 30px;
+    left: 50px;
+}
+.header{
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid white;
+}
+.logo  {
+    position: fixed;
+    right: 70px;
+    font-size: 30px;
+    margin-top: 18px;
+    margin-right: 54px;
+    color: var(--sub-color);
+}
+.logout-logo {
+    position: fixed;
+    right: 20px;
+    font-size: 30px;
+    color: var(--sub-color);
+    margin-top: 18px;
+}
+.logout-logo a, .logo a, .noti-logo, .debtors-logo{
+    color: var(--sub-color);
+}
+.top {
+    background-color: transparent;
+    position: relative;
+    width: 100vw;
+    z-index: 99;
+}
+.top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sub-color);
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+}
+
+.big-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: -1;
+
+}
+.big-image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/DebtSystem/assets/image/curancy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+    animation: Inout 5s infinite;
+}
+@keyframes Inout {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+.big-image::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -2;
+}
+.big-image .big-image-content {
+    text-align: center;
+    max-width: 500px;
+}
+.big-image .big-image-content h2 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.big-image .big-image-content p {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin: 15px 0;
+
+}
+/* about */
+.about{
+    background-color: var(--main-color);
+    border-top: 1px solid white;
+}
+.section-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 40px;
+    color: var(--sub-color);
+    text-transform: uppercase;
+}
+.section-title h2::before {
+    content: attr(data-title);
+    display: block;
+    color: var(--sub-color);
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+.about .about-item h2 {
+    color: var(--sub-color);
+    font-size: 35px;
+}
+.about .about-item p {
+    font-size: 18px;
+    margin: 15px 0 30px;
+    color: var(--sub-color);
+}
+.about .about-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about-item {
+    width: calc(100%/2);
+    padding: 15px;
+}
+.about-item-img {
+    position: relative;
+}
+.about-item-img img{
+    height: 300px;
+    width: 350px;
+}
+.about-item-img span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 35px;
+    transform: translate(-50%,-50%);
+}
+.about-item-img::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--sub-color);
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation: xoay 5s infinite;
+}
+@keyframes xoay{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
