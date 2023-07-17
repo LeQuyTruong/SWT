@@ -250,8 +250,17 @@ function checkEmptyInputWhenSubmit() {
     let checkRadioFemale = true;
     //Loop through all input tags
     inputs.forEach(function (cur) {
-        if (cur.id == 'male' || cur.id == 'female' ||cur.id == 'pic') {
-         
+        if (cur.id == 'male' || cur.id == 'female' || cur.id == 'pic') {
+            if (cur.id == 'male') {
+                if (cur.checked != true) {
+                    checkRadioMale = false;
+                }
+            }
+            if (cur.id == 'female') {
+                if (cur.checked != true) {
+                    checkRadioFemale = false;
+                }
+            }
             if (cur.id == 'pic') {
                 //Check img link
                 if (cur.value !== '') {
@@ -364,7 +373,19 @@ function checkEmptyInputWhenSubmit() {
             }
         }
     });
-   
+    if (checkRadioMale == false && checkRadioFemale == false) {
+        document.getElementById("er_mess_radio").textContent = "Please chose field!";
+        document.getElementById("er_mess_radio").classList.add("invalid");
+        document.getElementById("gender").classList.add("invalid");
+        document.getElementById("gen").classList.add("invalid");
+        document.getElementById("gen1").classList.add("invalid");
+    } else {
+        document.getElementById("er_mess_radio").textContent = "";
+        document.getElementById("er_mess_radio").classList.remove("invalid");
+        document.getElementById("gender").classList.remove("invalid");
+        document.getElementById("gen").classList.remove("invalid");
+        document.getElementById("gen1").classList.remove("invalid");
+    }
     return isEmpty;
 }
 function formatPhone(phone) {
@@ -423,13 +444,36 @@ function formatName(name) {
     let isMatch = regExp.test(name.value);
     let re = /^\S+$/;
     if (isMatch) {
-        check = true;
+            check = true;
     } else { // có special character
         check = "Name not allow to have special character";
     }
     return check;
 }
+function clickRadio() {
+    var male = document.getElementById('male');
+    var female = document.getElementById('female');
+    male.onclick = function () {
+        document.getElementById("er_mess_radio").textContent = "";
+        document.getElementById("er_mess_radio").classList.remove("invalid");
+        document.getElementById("gen").classList.remove("invalid");
+        document.getElementById("gen1").classList.remove("invalid");
+    };
 
+    female.onclick = function () {
+        document.getElementById("er_mess_radio").textContent = "";
+        document.getElementById("er_mess_radio").classList.remove("invalid");
+        document.getElementById("gen").classList.remove("invalid");
+        document.getElementById("gen1").classList.remove("invalid");
+    };
+
+}
+document.getElementById("gen").onclick = function() {
+    document.getElementById("gender").classList.remove("invalid");
+};
+document.getElementById("gen1").onclick = function() {
+    document.getElementById("gender").classList.remove("invalid");
+};
 
 function checkBothPassword(repassword) {
     let pass = document.querySelector("#password");
@@ -453,9 +497,11 @@ function checkLinkImg(img) {
 
 var formRegister = document.querySelector("#registerForm");
 if (formRegister) {
+     clickRadio();
     var checkEmptyAllInput;
     formRegister.onsubmit = function (e) {
         e.preventDefault();
+        // All inputs can not be empty
         checkEmptyAllInput = checkEmptyInputWhenSubmit();
         //        // equal false min one of these inputs are empty
         if (checkEmptyAllInput === true) {
@@ -464,8 +510,17 @@ if (formRegister) {
         }
         document.querySelector(".submit_btn").classList.add("btn_appear");
     };
+    //   addEventListener('submit', (e) => {
+    //         e.preventDefault();
+    //         checkEmptyInputWhenSubmit();
+    ////         var checkEmptyAllInput = checkEmptyInputWhenSubmit();
+    ////         console.log(checkEmptyAllInput);
+    //    });
+
 }
 //When user input then check
 checkEmptyInputWithInput();
 //When user blur then check
 checkEmptyInputWithBlur();
+
+

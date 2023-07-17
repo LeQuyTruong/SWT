@@ -39,18 +39,18 @@
     </head>
     <body>
 
-        <!--        <div class="h1 text-center mt-4 mb-4 header">Login Form</div>
-        
+        <div class="h1 text-center mt-4 mb-4 header">Login Form</div>
+
         <c:if test="${requestScope.message ne null}">
             <div class="alert alert-danger text-center">
-            ${requestScope.message}
-        </div>
+                ${requestScope.message}
+            </div>
         </c:if>
 
         <c:if test="${requestScope.noti ne null}">
             <div class="alert alert-success text-center">
-            ${requestScope.noti}
-        </div>
+                ${requestScope.noti}
+            </div>
         </c:if>
 
         <div class="container">
@@ -86,102 +86,18 @@
                 </form>
             </div>
         </div>
-         START FOOTER 
+        <!-- START FOOTER -->
         <div class="text-center mt-5 footer">
             <strong>Mọi góp ý, thắc mắc xin liên hệ : </strong> Phòng dịch vụ sinh viên: Email <a
                 href="#">dichvusinhvien@fe.edu.vn</a> . Điện thoại: <strong>(024)7308.13.13 </strong>
             <p>© Powered by <a href="#">FPT University</a> | <a href="#">CMS</a> | <a href="#">library</a> | <a
                     href="#">books24x7</a></p>
         </div>
-         END FOOTER 
+        <!-- END FOOTER -->
 
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"
         type="text/javascript"></script>
         <script src="/DebtSystem/assets/js/login.js" ></script>
 
-    </body>-->
-        <c:if test="${requestScope.message ne null}">
-            <div class="alert alert-danger text-center">${requestScope.message}</div>
-        </c:if>
-
-        <c:if test="${requestScope.noti ne null}">
-            <div class="alert alert-success text-center">${requestScope.noti}</div>
-        </c:if>
-
-    <body class="img js-fullheight" style="background-image: url(/DebtSystem/assets/image/vnd.jpg)">
-        <section class="ftco-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center mb-5">
-                        <h2 class="heading-section">Login</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="login-wrap p-0">
-                            <h3 class="mb-4 text-center">
-                                <a href="register"> Have an account ? Sign Up Now !</a>
-                            </h3>
-                            <form action="login" class="mt-4" id="loginForm" method="post">
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Email"
-                                        id="email"
-                                        name="email"
-                                        required
-                                        />
-                                </div>
-                                <div id="email-error" class="text-danger ml-1"></div>
-                                <div class="form-group">
-                                    <input
-                                        id="password-field"
-                                        type="password"
-                                        class="form-control"
-                                        placeholder="Password"
-                                        id="password"
-                                        name="password"
-                                        required
-                                        />
-                                    <span
-                                        toggle="#password-field"
-                                        class="fa fa-fw fa-eye field-icon toggle-password"
-                                        ></span>
-                                    <div id="password-error" class="text-danger ml-1"></div>
-                                </div>
-                                <div class="form-group">
-                                    <button
-                                        type="submit"
-                                        class="form-control btn btn-primary submit px-3"
-                                        id="login-btn"
-                                        >
-                                        Sign In
-                                    </button>
-                                </div>
-                                <div
-                                    class="g-recaptcha"
-                                    data-sitekey="6LeBzHwkAAAAADz0I_qTXDeh5BhEPIk2dJ2lMcuW"
-                                    ></div>
-                                <div class="form-group d-md-flex">
-                                    <div class="w-50 text-md-right">
-                                        <a href="forgotPassword" style="color: #fff">Forgot Password</a>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"
-        type="text/javascript"></script>
-        <script src="/DebtSystem/assets/js/login.js" ></script>
-        <script src="/DebtSystem/assets/js/jquery.min.js"></script>
-        <script src="/DebtSystem/assets/js/popper.js"></script>
-        <script src="/DebtSystem/assets/js/bootstrap.min.js"></script>
-        <script src="/DebtSystem/assets/js/main.js"></script>
     </body>
 </html>

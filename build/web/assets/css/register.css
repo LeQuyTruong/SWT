@@ -6,8 +6,7 @@
 }
 
 body {
-    background-image: url("/DebtSystem/assets/image/vnd.jpg");
-    
+    background: #f8f8f8;
 }
 
 /* FIX FLOAT */
@@ -25,20 +24,17 @@ img {
 }
 
 .container {
-    width: 40%;
+    width: 50%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 /* CONTENT */
 .content {
     padding: 0 28px 28px 28px;
     background-color: #fff;
-    height: 700px;
-    border-radius: 80px;
-    
+    height: 900px;
 }
 
 .content .content-text {
@@ -75,9 +71,6 @@ img {
 .errormess{
     display: none;
 }
-.form-control{
-    border-radius: 20px;
-}
 .form-control.invalid{
     border: red solid 1px;
 }
@@ -92,7 +85,6 @@ img {
             }
 .submit_btn{
     display: none;
-    
 }
 .submit_btn.btn_appear{
     display: block;

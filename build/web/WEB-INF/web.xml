@@ -56,18 +56,6 @@
         <servlet-name>DebtListController</servlet-name>
         <servlet-class>controller.user.DebtListController</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>CreateDebtController</servlet-name>
-        <servlet-class>controller.user.CreateDebtController</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>EditDebtorController</servlet-name>
-        <servlet-class>controller.user.EditDebtorController</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>sortDebtList</servlet-name>
-        <servlet-class>controller.user.sortDebtList</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -123,18 +111,6 @@
     <servlet-mapping>
         <servlet-name>DebtListController</servlet-name>
         <url-pattern>/debtList</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CreateDebtController</servlet-name>
-        <url-pattern>/createDebt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>EditDebtorController</servlet-name>
-        <url-pattern>/editDebtor</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>sortDebtList</servlet-name>
-        <url-pattern>/sortDebtList</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
