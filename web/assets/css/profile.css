@@ -1,0 +1,113 @@
+* {
+    text-align: center;
+    text-decoration: none;
+   
+    
+}
+.title {
+    margin: 40px;
+    font-size: 40px;
+    font-weight: strong;
+}
+
+/*username*/
+.profile_username {
+    font-size: 20px;
+   margin-right: 150px;
+   margin-bottom: 10px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   
+}
+
+.bar_username {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+   margin-top: 10px;
+   padding: 12px;
+   
+}
+
+
+/*phonenumber*/
+.profile_phone {
+   font-size: 20px;
+   margin-right: 180px;
+   margin-bottom: 10px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   
+}
+
+.bar_phone {
+   
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 12px;
+}
+
+
+
+/*email*/
+.profile_email {
+   font-size: 20px;
+   margin-right: 160px;
+   margin-bottom: 10px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   margin-left: 10px;
+   
+}
+
+.bar_email {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+   margin-top: 10px;
+   padding: 12px;
+}
+
+
+/*address*/
+.profile_address{
+    font-size: 20px;
+   margin-right: 140px;
+   margin-bottom: 10px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   margin-left:20px;
+   padding-right: 12px;
+   
+}
+
+.bar_address {
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+   margin-top: 10px;
+   padding: 12px;
+  
+}
+
+
+/*changepassword button */
+.btn_changepassword{
+     margin:20px;
+    padding: 10px 20px;
+    background-color:#eaa023;
+    color:black;
+}
+.btn_changepassword:hover{
+    color:white;
+  
+}
+a:hover {
+    color: orange;
+}
+
+
+  
+
