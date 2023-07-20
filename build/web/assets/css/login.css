@@ -89,7 +89,7 @@ abbr[title],
 abbr[data-original-title] {
     text-decoration: underline;
     -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
+    
     cursor: help;
     border-bottom: 0;
     text-decoration-skip-ink: none;
@@ -183,11 +183,6 @@ samp {
     font-size: 1em;
 }
 
-pre {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    overflow: auto;
-}
 
 figure {
     margin: 0 0 1rem;
@@ -527,6 +522,9 @@ pre {
     display: block;
     font-size: 87.5%;
     color: #212529;
+        margin-top: 0;
+    margin-bottom: 1rem;
+    overflow: auto;
 }
 pre code {
     font-size: inherit;
@@ -1987,7 +1985,7 @@ pre code {
     -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    /*transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;*/
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2517,7 +2515,7 @@ textarea.form-control {
     -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3245,15 +3243,13 @@ input[type="button"].btn-block {
     border-right: 0;
     border-bottom: 0.3em solid transparent;
     border-left: 0.3em solid;
+    vertical-align: 0;
 }
 
 .dropright .dropdown-toggle:empty::after {
     margin-left: 0;
 }
 
-.dropright .dropdown-toggle::after {
-    vertical-align: 0;
-}
 
 .dropleft .dropdown-menu {
     top: 0;
@@ -3967,7 +3963,6 @@ input[type="button"].btn-block {
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -webkit-appearance: none;
     appearance: none;
@@ -4000,7 +3995,6 @@ input[type="button"].btn-block {
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -moz-appearance: none;
     appearance: none;
@@ -4036,7 +4030,6 @@ input[type="button"].btn-block {
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     appearance: none;
 }
@@ -4090,7 +4083,6 @@ input[type="button"].btn-block {
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5788,7 +5780,6 @@ a.close.disabled {
     -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: -webkit-transform 0.3s ease-out;
     -o-transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     -webkit-transform: translate(0, -50px);
     -ms-transform: translate(0, -50px);
@@ -6265,7 +6256,6 @@ a.close.disabled {
     -webkit-transition: -webkit-transform 0.6s ease-in-out;
     transition: -webkit-transform 0.6s ease-in-out;
     -o-transition: transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -10100,7 +10090,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-hide {
-    font: 0/0 a;
+    
     color: transparent;
     text-shadow: none;
     background-color: transparent;
@@ -10401,7 +10391,6 @@ textarea.form-control {
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "\f0c8";
-    font-family: "FontAwesome";
     position: absolute;
     color: rgba(255, 255, 255, 0.1);
     font-size: 20px;
@@ -10422,7 +10411,7 @@ textarea.form-control {
 .checkbox-wrap input:checked ~ .checkmark:after {
     display: block;
     content: "\f14a";
-    font-family: "FontAwesome";
+    
     color: rgba(0, 0, 0, 0.2);
 }
 

@@ -165,7 +165,7 @@
                         </div>
                     </div>
                     <form name="inputValue" action="debtorList" method="POST" >
-                        <table class=" table table-bordered table-striped table-hover">
+                        <table name="des" class=" table table-bordered table-striped table-hover">
                             <thead >
                                 <tr class="header-form-debtor">
                                     <th style="border-radius: 10px 0 0 10px"><button name="column" value="id" style=" border: none; background-color: transparent; width: 45px; height: 45px;">ID</button></th>
